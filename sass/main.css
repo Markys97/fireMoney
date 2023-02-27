@@ -80,6 +80,17 @@ body {
   bottom: 82%;
 }
 
+.title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 33px;
+  text-align: center;
+  color: #45515F;
+  margin-bottom: 17px;
+}
+
 @media screen and (min-width: 800px) {
   .wrapper {
     padding: 0;
@@ -250,6 +261,7 @@ body {
   background: url(../images/img/main-bg.png) no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .body-intro__info {
@@ -529,5 +541,139 @@ body {
   }
   .btn-fire__content {
     padding: 15px 23px 15px 75px;
+  }
+}
+.best-offers {
+  padding: 39px 0 51px;
+  background: #F6F9FC;
+}
+.best-offers__title {
+  margin-bottom: 32px;
+}
+.best-offers__item {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 22px;
+  padding: 36px 37px 35px 36px;
+}
+.best-offers__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.best-offers__item--lite .best-offers__item-title span {
+  color: #FFC83E;
+}
+.best-offers__item--basic .best-offers__item-title span {
+  color: #FF7B00;
+}
+.best-offers__item--pro .best-offers__item-title span {
+  color: #FA5914;
+}
+.best-offers__item-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  color: #45515F;
+  margin-bottom: 14px;
+}
+.best-offers__item-list li + li {
+  margin-top: 16px;
+}
+.best-offers__item-list li {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.best-offers__item-icon {
+  max-width: 12px;
+  height: 11px;
+  display: flex;
+}
+.best-offers__item-icon svg {
+  height: auto;
+  max-width: 100%;
+}
+.best-offers__item-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 182%;
+  color: #45515F;
+}
+.best-offers__item-text span {
+  font-weight: 700;
+  margin-left: 3px;
+}
+.best-offers__row {
+  margin-bottom: 26px;
+}
+.best-offers__text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 145.5%;
+  text-align: center;
+  color: #45515F;
+}
+
+@media screen and (min-width: 768px) {
+  .best-offers {
+    padding: 50px 0 70px;
+  }
+  .best-offers__title {
+    margin-bottom: 35px;
+  }
+  .best-offers__item {
+    max-width: 408px;
+    padding: 34px 30px 35px 63px;
+    margin: 0 auto;
+  }
+  .best-offers__item-title {
+    margin-bottom: 17px;
+  }
+  .best-offers__item-list li + li {
+    margin-top: 10px;
+  }
+  .best-offers__row {
+    margin-bottom: 35px;
+  }
+  .best-offers__text {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 145.5%;
+    text-align: center;
+    color: #45515F;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .best-offers {
+    padding: 54px 0 45px;
+  }
+  .best-offers__title {
+    margin-bottom: 31px;
+  }
+  .best-offers__item {
+    max-width: unset;
+    padding: 34px 30px 35px 63px;
+    margin: 0;
+  }
+  .best-offers__item-title {
+    margin-bottom: 14px;
+  }
+  .best-offers__item-list li + li {
+    margin-top: 8px;
+  }
+  .best-offers__row {
+    margin-bottom: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 28px;
   }
 }/*# sourceMappingURL=main.css.map */

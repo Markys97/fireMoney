@@ -4,7 +4,7 @@ slideRanges.forEach(slideRange=>{
     
 
     noUiSlider.create(slideRange, {
-        start: [0],
+        start: [20],
         connect: 'lower',
         tooltips:true,
         range: {
