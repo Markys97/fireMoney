@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" >
     <link rel="stylesheet" href="./sass/main.css">
+    <link rel="icon" href="./images/icon/fire.png">
     <title>FireMoney</title>
 </head>
 <body>
@@ -35,24 +36,25 @@
                             <div class="header-fixed__input input-range">
                                 <div class="input-range__row">
                                     <div class="input-range__title">Размер кредита</div>
-                                    <div class="input-range__data">45 000 ₽</div>
+                                    <div class="input-range__data"> <span class="input-range__data-number">45 000</span> ₽</div>
                                 </div>
-                                <div class="input-range__slide"></div>
+                                <div class="input-range__slide input-range__slide--money slider-range "></div>
                             </div>
                         </div>
+
                         <div class="header-fixed__inputs">
                             <div class="header-fixed__input input-range">
                                 <div class="input-range__row">
                                     <div class="input-range__title">Срок кредита</div>
-                                    <div class="input-range__data">5 месяцев</div>
+                                    <div class="input-range__data"><span class="input-range__data-number">5</span> месяцев</div>
                                 </div>
-                                <div class="input-range__slide"></div>
+                                <div class="input-range__slide input-range__slide--duration slider-range"></div>
                             </div>
                         </div>
                    </div>
 
                     <div class="header-fixed__right">
-                        <a href="javascript:void(0)" class="header-fixed__button btn-bare">Оформить заявку</a>
+                        <a href="javascript:void(0)" class="header-fixed__button btn">Оформить заявку</a>
                     </div>
                 </div>
             </div>
@@ -82,17 +84,17 @@
                                     <nav class="header__menu">
                                         <ul class="menu__list">
                                             <li class="menu__item">
-                                                <a href="javascript:void(0)" class="menu__link">
+                                                <a href="#with-us" class="menu__link">
                                                     Почему мы?
                                                 </a>
                                             </li>
                                             <li class="menu__item">
-                                                <a href="javascript:void(0)" class="menu__link">
+                                                <a href="#about" class="menu__link">
                                                     О сервисе
                                                 </a>
                                             </li>
                                             <li class="menu__item">
-                                                <a href="javascript:void(0)" class="menu__link">
+                                                <a href="#faq" class="menu__link">
                                                     Вопросы-ответы
                                                 </a>
                                             </li>
@@ -440,7 +442,7 @@
                     </div>
                 </div>
             </section>
-            <section class="with-us">
+            <section class="with-us" id="with-us">
                 <div class="with-us__container wrapper">
                     <div class="with-us__content">
                         <h2 class="with-us__title title">Почему выбирают нас</h2>
@@ -642,7 +644,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about__container wrapper">
                     <div class="about__content">
                         <h2 class="about__title title">О сервисе</h2>
@@ -714,7 +716,7 @@
                     </div>
                 </div>
             </section>
-            <section class="faq">
+            <section class="faq" id="faq">
                 <div class="faq__container wrapper">
                     <div class="faq__content">
                         <h2 class="faq__title title">Вопросы-ответы</h2>

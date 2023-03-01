@@ -101,6 +101,9 @@
             font-size: 16px;
             line-height: 19px;
             color: #FFFFFF;
+            &:hover{
+                color: #ede6e6;
+            }
         }
     }
     &__title{

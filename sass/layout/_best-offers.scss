@@ -143,6 +143,10 @@
     }
 }
 
+.prevent-end{
+    left:-200%!important
+}
+
 .get-money{
     margin-top: 51px;
     &__title{
@@ -177,6 +181,7 @@
             background: linear-gradient(81.55deg, #FFC83E 33.93%, #FF9F47 73.78%);
             
         }
+        overflow: hidden;
        
     }
    
@@ -185,7 +190,7 @@
         display: flex;
         align-items: center;
         gap: 0 83px;
-        justify-content: space-between;
+        // justify-content: space-between;
         &.active{
            
           position: relative;
