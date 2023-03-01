@@ -77,3 +77,14 @@ getMoneyIcons.forEach((getMoneyIcon,index,arr)=> {
      
     })
 })
+
+// open/close answer faq
+let faqItems= [...document.querySelectorAll('.item-faq')];
+
+faqItems.forEach((faqItem,index,arr)=>{
+    faqItem.querySelector('.item-faq__icon').addEventListener('click',function(e){
+         faqItem.classList.toggle('active')
+        let answer=this.closest('.item-faq').querySelector('.item-faq__answer')
+        console.log(answer.clientHeight)
+    })
+})

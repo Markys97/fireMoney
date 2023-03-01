@@ -78,6 +78,21 @@ body{
     margin-bottom: 17px;
 }
 
+.addres{
+    position: relative;
+    display: inline-flex;
+    gap: 0 8px;
+    &::before{
+        content: '';
+        display: block;
+        width: 12px;
+        height: 16px;
+        background: url(../images/icon/icon-map.svg) no-repeat;
+        background-size: cover;
+
+    }
+
+}
 
 
 @media screen and (min-width:800px) {
