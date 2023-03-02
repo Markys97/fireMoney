@@ -167,10 +167,48 @@ window.addEventListener('resize',function(e){
 
 })
 
- 
-
 //set first step
 setStepDesktop(getMoneyItemActivePosition,getMoneyItems.length)
+
+
+// menu moile open/close
+
+let burgerBtn= document.querySelector('.header__burger');
+let containerMenu= document.querySelector('.header__center');
+let closeMenuBtn= document.querySelector('.menu__close-btn');
+
+const openMenu = ()=>{
+    containerMenu.classList.add('open');
+    document.body.classList.add('off')
+}
+const closeMenuMobile = ()=>{
+    containerMenu.classList.remove('open');
+    document.body.classList.remove('off')
+}
+
+burgerBtn.addEventListener('click',function(e){
+    openMenu()
+})
+closeMenuBtn.addEventListener('click',function(e){
+    closeMenuMobile()
+})
+
+window.addEventListener('resize',function(e){
+    if(this.window.screen.width >=768){
+        closeMenuMobile()
+    }
+})
+
+
+let menuItems= [...document.querySelectorAll('.menu__item')];
+menuItems.forEach(menuItem=>{
+    menuItem.addEventListener('click',function(e){
+        closeMenuMobile()
+       
+    })
+})
+
+
 
 
 

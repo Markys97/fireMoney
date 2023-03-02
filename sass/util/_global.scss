@@ -99,6 +99,35 @@ html{
     scroll-behavior: smooth;
 }
 
+.off{
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        min-height: 100vh;
+        background: rgba(#000,.5);
+        z-index: 200;
+       
+    }
+    & .header{
+        z-index: 3000;
+        &__left{
+            pointer-events: none;
+            opacity: .5;
+        }
+    }
+}
+
+.open{
+    right: 0!important;
+}
 
 @media screen and (min-width:800px) {
     .wrapper{
